@@ -1,0 +1,65 @@
+generated: '2026-07-21'
+method: searched
+source: npmjs.com (@frontend-sdk scope, maintainers shogun-engineering/shogun-admin) + packagist.org (shogun_labs) + github.com/getshogun
+notes: >-
+  Shogun publishes first-party client packages primarily as Frontend integration
+  SDKs (npm @frontend-sdk/*, repo github.com/getshogun/frontend-integrations and
+  frontend-sdk) and platform extensions. The @frontend-sdk/* integration adapters
+  belong to the Shogun Frontend product, which Shogun has announced it is retiring
+  (see lifecycle/). The Magento 2 / Adobe Commerce extensions cover the Page Builder
+  product. Shogun does not publish a general-purpose REST/GraphQL API client library.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@frontend-sdk/klarna"
+    url: https://www.npmjs.com/package/@frontend-sdk/klarna
+    install: npm install @frontend-sdk/klarna
+    repository: https://github.com/getshogun/frontend-integrations
+    official: true
+    product: Shogun Frontend
+    kind: integration-sdk
+  - language: javascript
+    registry: npm
+    name: "@frontend-sdk/klaviyo"
+    url: https://www.npmjs.com/package/@frontend-sdk/klaviyo
+    install: npm install @frontend-sdk/klaviyo
+    repository: https://github.com/getshogun/frontend-integrations
+    official: true
+    product: Shogun Frontend
+    kind: integration-sdk
+  - language: javascript
+    registry: npm
+    name: "@frontend-sdk/recharge"
+    url: https://www.npmjs.com/package/@frontend-sdk/recharge
+    install: npm install @frontend-sdk/recharge
+    repository: https://github.com/getshogun/frontend-integrations
+    official: true
+    product: Shogun Frontend
+    kind: integration-sdk
+  - language: javascript
+    registry: npm
+    name: "@frontend-sdk/okendo"
+    url: https://www.npmjs.com/package/@frontend-sdk/okendo
+    install: npm install @frontend-sdk/okendo
+    repository: https://github.com/getshogun/frontend-integrations
+    official: true
+    product: Shogun Frontend
+    kind: integration-sdk
+  - language: javascript
+    registry: npm
+    name: "@frontend-sdk/yotpo"
+    url: https://www.npmjs.com/package/@frontend-sdk/yotpo
+    install: npm install @frontend-sdk/yotpo
+    repository: https://github.com/getshogun/frontend-sdk
+    official: true
+    product: Shogun Frontend
+    kind: integration-sdk
+  - language: php
+    registry: packagist
+    name: shogun_labs/module-shogun-page-builder
+    url: https://packagist.org/packages/shogun_labs/module-shogun-page-builder
+    install: composer require shogun_labs/module-shogun-page-builder
+    repository: https://github.com/getshogun/module-shogun-page-builder
+    official: true
+    product: Shogun Page Builder (Magento 2)
+    kind: platform-extension

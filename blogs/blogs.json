@@ -1,0 +1,14 @@
+{
+  "repo": "shogun",
+  "feeds": [
+    {
+      "source": "https://help.getshogun.com/en/",
+      "feed_url": "https://help.getshogun.com/en/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}

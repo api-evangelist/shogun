@@ -1,9 +1,29 @@
 aid: shogun
 name: Shogun
-description: 'Shogun is a company surfaced as a portfolio company of accel, initialized-capital, insight-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  Shogun is an ecommerce experience platform that helps Shopify and BigCommerce
+  merchants build and optimize high-converting storefronts without code. Its
+  flagship product, the Shogun Page Builder, is a drag-and-drop editor for
+  landing pages, product pages, blog posts, and reusable store sections, backed
+  by A/B Testing, Smart Pages personalization, and an AI Section Builder. Shogun
+  also operated Shogun Frontend, a headless commerce framework with a Frontend
+  GraphQL API and a family of @frontend-sdk integration libraries, which the
+  company has announced it is retiring to concentrate on Page Builder. Shogun is
+  used by tens of thousands of scaling brands and is backed by Accel, Initialized
+  Capital, and Insight Partners.
 url: https://raw.githubusercontent.com/api-evangelist/shogun/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/65f36a007b9322599125cdb7/6621737cc90f7de0564a48b0_Shogun-Fav-Icon%20(4).png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -14,11 +34,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ecommerce
-apis: []
+- Page Builder
+- Headless Commerce
+- Shopify
+- BigCommerce
+- Conversion Optimization
+- No-Code
+apis:
+- name: Shogun Frontend API
+  description: >-
+    GraphQL API behind the Shogun Frontend headless commerce product, used to
+    query storefront content, pages, and integration data. Note: Shogun has
+    announced the retirement of the Shogun Frontend product and this API surface
+    (see lifecycle/shogun-lifecycle.yml).
+  humanURL: https://intercom.help/shogun-fe/en
+  baseURL: https://developer.api.getshogun.com/frontend
+  tags:
+  - GraphQL
+  - Headless Commerce
+  - Frontend
+  properties:
+  - type: Documentation
+    url: https://intercom.help/shogun-fe/en
+  - type: SDKs
+    url: packages/shogun-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -27,3 +70,38 @@ maintainers:
 common:
 - type: Website
   url: https://getshogun.com/
+- type: DeveloperPortal
+  url: https://developer.getshogun.com/
+- type: Documentation
+  url: https://docs.getshogun.com/
+- type: Support
+  url: https://help.getshogun.com/en/
+- type: Blog
+  url: https://getshogun.com/learn/
+- type: Pricing
+  url: https://getshogun.com/pricing/
+- type: SignUp
+  url: https://app.getshogun.com/sign-in
+- type: TermsOfService
+  url: https://getshogun.com/policy/terms/
+- type: PrivacyPolicy
+  url: https://getshogun.com/policy/privacy/
+- type: GitHubOrganization
+  url: https://github.com/getshogun
+- type: StatusPage
+  url: https://status.getshogun.com/
+- type: Deprecation
+  url: https://getshogun.com/learn/
+- type: Packages
+  url: packages/shogun-packages.yml
+- type: SDKs
+  url: packages/shogun-packages.yml
+- type: Lifecycle
+  url: lifecycle/shogun-lifecycle.yml
+- type: DomainSecurity
+  url: security/shogun-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

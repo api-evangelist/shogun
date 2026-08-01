@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: getshogun.com + intercom.help/shogun-fe (Frontend retirement notice) + status.getshogun.com
+status_page: https://status.getshogun.com/
+deprecation:
+  policy_url: https://getshogun.com/learn/
+  product_sunset:
+    product: Shogun Frontend
+    announced: true
+    summary: >-
+      Shogun has announced it is retiring the Shogun Frontend product (including
+      its Frontend GraphQL API and the @frontend-sdk/* integration SDKs) to focus
+      on its flagship Shogun Page Builder for Shopify and BigCommerce. A dated
+      timeline is published in the "Sunsetting Shogun Frontend" blog post.
+    replacement: Shogun Page Builder
+  sunset_header: unknown
+sla:
+  url: https://status.getshogun.com/
+active_products:
+  - Shogun Page Builder
+  - Shogun A/B Testing
+  - Shogun Smart Pages
+retiring_products:
+  - Shogun Frontend
