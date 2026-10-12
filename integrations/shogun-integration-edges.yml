@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/shogun/integrations
+- https://n8n.io/integrations/shogun/
+- https://composio.dev/toolkits/shogun
+- https://monid.ai/tools/shogun
+checked:
+- https://composio.dev/toolkits/shogun
+- https://monid.ai/tools/shogun
+- https://n8n.io/integrations/shogun/
+- https://zapier.com/apps/shogun/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
