@@ -6,9 +6,16 @@ source:
 - https://composio.dev/toolkits/shogun
 - https://monid.ai/tools/shogun
 checked:
+- https://api.nuget.org/v3
 - https://composio.dev/toolkits/shogun
+- https://crates.io/api/v1
 - https://monid.ai/tools/shogun
 - https://n8n.io/integrations/shogun/
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - https://zapier.com/apps/shogun/integrations
 - shopify/integrations/shopify-integration-edges.yml
 summary: null
@@ -34,4 +41,70 @@ edges:
   detected_by: mirror-platform-listings.py
   publisher_verified:
   - Built for Shopify
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@frontend-sdk/klarna
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@frontend-sdk/klarna'
+      version: 0.26.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/klarna
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/klaviyo'
+      version: 0.25.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/klaviyo
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/okendo'
+      version: 0.25.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/okendo
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/recharge'
+      version: 0.27.0
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/recharge
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/yotpo'
+      version: 0.25.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/yotpo
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 templates: []

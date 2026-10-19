@@ -15,3 +15,70 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: shogun-npm-registry
+  label: npm registry
+  partner: npm
+  partner_name: npm registry
+  category: official SDK (JavaScript/TypeScript)
+  type: register
+  channel: package-registry
+  evidence: https://www.npmjs.com/package/@frontend-sdk/klarna
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@frontend-sdk/klarna'
+      version: 0.26.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/klarna
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/klaviyo'
+      version: 0.25.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/klaviyo
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/okendo'
+      version: 0.25.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/okendo
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/recharge'
+      version: 0.27.0
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/recharge
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    - name: '@frontend-sdk/yotpo'
+      version: 0.25.1
+      released: '2025-12-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@frontend-sdk/yotpo
+      repo_leg: github-org:getshogun
+      publisher_leg: email:getshogun.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
