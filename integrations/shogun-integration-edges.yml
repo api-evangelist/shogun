@@ -6,6 +6,7 @@ source:
 - https://composio.dev/toolkits/shogun
 - https://monid.ai/tools/shogun
 checked:
+- gorgias/integrations/gorgias-integration-edges.yml
 - https://api.nuget.org/v3
 - https://composio.dev/toolkits/shogun
 - https://crates.io/api/v1
@@ -21,26 +22,6 @@ checked:
 summary: null
 marketplace_apps: []
 edges:
-- partner_name: Shopify (own)
-  partner: shopify
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://apps.shopify.com/shogun-ab-testing
-  mirror_of: shopify/integrations/shopify-integration-edges.yml
-  apps:
-  - Shogun ‑ AB Testing
-  - Shogun ‑ Landing Page Builder
-  - Shogun ‑ Personalization
-  listing_count: 3
-  detected: '2026-10-15'
-  detected_by: mirror-platform-listings.py
-  publisher_verified:
-  - Built for Shopify
 - partner_name: npm registry
   partner: npm
   partner_match: register
@@ -107,4 +88,40 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-official-sdks.py
   first_seen: '2026-10-18'
+- partner_name: Gorgias (own)
+  partner: gorgias
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.gorgias.com/apps/shogun-frontend
+  mirror_of: gorgias/integrations/gorgias-integration-edges.yml
+  apps:
+  - Shogun Frontend
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+- partner_name: Shopify (own)
+  partner: shopify
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.shopify.com/shogun-ab-testing
+  mirror_of: shopify/integrations/shopify-integration-edges.yml
+  apps:
+  - Shogun ‑ AB Testing
+  - Shogun ‑ Landing Page Builder
+  - Shogun ‑ Personalization
+  listing_count: 3
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
+  publisher_verified:
+  - Built for Shopify
 templates: []
