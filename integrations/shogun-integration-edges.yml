@@ -19,6 +19,7 @@ checked:
 - https://rubygems.org/api/v1
 - https://zapier.com/apps/shogun/integrations
 - shopify/integrations/shopify-integration-edges.yml
+- yotpo/integrations/yotpo-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
@@ -124,4 +125,20 @@ edges:
   detected_by: mirror-platform-listings.py
   publisher_verified:
   - Built for Shopify
+- partner_name: Yotpo (own)
+  partner: yotpo
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.yotpo.com/integrations/shogun/
+  mirror_of: yotpo/integrations/yotpo-integration-edges.yml
+  apps:
+  - Shogun
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
 templates: []
